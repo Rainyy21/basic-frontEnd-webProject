@@ -87,6 +87,19 @@ body {
   background:var(--rust);
 }
 
+/* Responsive visibility */
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
 #side_bar{
   background-color: var(--ink);
   display: flex;

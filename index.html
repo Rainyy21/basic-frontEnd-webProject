@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show log</title>
 
     <!-- Bootstrap CSS -->
@@ -21,14 +21,15 @@
 <body>
  <div id="body_page">
 
-      <div id="side_bar">
+      <div id="side_bar" class="desktop-only">
        <h1>Book and Movie log</h1>
       </div>
 
       
       <div id="homepage">
         <div id="home_nav">
-          <h1>Good evening</h1>
+          <h1 class="desktop-only">Good evening</h1>
+          <h1 class="mobile-only">Book/Movie log</h1>
           <div id="search_bar">
             <input type="text" id="mediaSearch" placeholder="🔍 Search by title, author, network, or genre...">
           </div>
