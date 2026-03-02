@@ -90,13 +90,39 @@ body {
 /* Responsive visibility */
 @media (min-width: 769px) {
   .mobile-only {
-    display: none !important;
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
   .desktop-only {
-    display: none !important;
+    display: none;
+  }
+
+  #home_nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    height: auto;
+  }
+
+  #search_bar {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    order: 2; /* Put search bar in the middle */
+  }
+
+  .mobile-only {
+    order: 1; /* Title at the top */
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  #button {
+    order: 3; /* Button at the bottom */
+    width: 100%;
+    justify-content: center;
   }
 }
 
