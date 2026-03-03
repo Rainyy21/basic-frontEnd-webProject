@@ -58,6 +58,11 @@ body {
   .mobile-only {
     display: none;
   }
+
+  .mobile-search-button {
+    display: none !important;
+  }
+
 }
 
 @media (max-width: 768px) {
